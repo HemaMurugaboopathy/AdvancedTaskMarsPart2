@@ -1,0 +1,19 @@
+[
+  {
+    "Id": 1,
+    "Title": "ISTQB",
+    "Description": "ISTQB foundation level training provided",
+    "Category": "Programming & Tech",
+    "Subcategory": "QA",
+    "Tags": "Test",
+    "ServiceType": "One-Off service",
+    "LocationType": "Online",
+    "StartDate": "03/05/2024",
+    "EndDate": "03/06/2024",
+    "StartTime": "14:00",
+    "EndTime": "15:00",
+    "SkillTrade": "Skill-exchange",
+    "Credit": "10",
+    "Active": "Active"
+  }
+]
