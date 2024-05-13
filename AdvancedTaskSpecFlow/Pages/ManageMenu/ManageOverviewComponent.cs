@@ -29,7 +29,8 @@ namespace AdvancedTaskSpecFlow.Pages.ManageMenu
         {
             try
             {
-                ManageRequestsTab = driver.FindElement(By.XPath("//a[text()='Manage Requests']"));
+                Wait.WaitToBeClickable(driver, "XPath", "//div[text()='Manage Requests']", 8);
+                ManageRequestsTab = driver.FindElement(By.XPath("//div[text()='Manage Requests']"));
             }
             catch (Exception ex)
             {

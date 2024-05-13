@@ -10,7 +10,6 @@ namespace AdvancedTaskSpecFlow.Pages
         private IWebElement SaveButton;
         private IWebElement successMessage;
         private IWebElement closeMessage;
-
         public void renderComponents()
         {
             try
@@ -45,7 +44,6 @@ namespace AdvancedTaskSpecFlow.Pages
             SaveButton.Click();
             Wait.WaitToExist(driver, "XPath", "//div[@class='ns-box-inner']", 4);
         }
-
         public string getMessage()
         {
             renderSuccessMessage();

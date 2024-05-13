@@ -1,10 +1,5 @@
 ﻿using AdvancedTaskSpecFlow.Utilities;
 using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AdvancedTaskSpecFlow.Pages.AccountMenu
 {
@@ -25,14 +20,11 @@ namespace AdvancedTaskSpecFlow.Pages.AccountMenu
                 Console.WriteLine(ex);
             }
         }
-
-
         public void GoToUserTab()
         {
             renderComponents();
             //Navigate to change password page  
             userTab.Click();
         }
-
     }
 }

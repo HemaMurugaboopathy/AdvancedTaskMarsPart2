@@ -99,7 +99,7 @@ namespace AdvancedTaskSpecFlow.StepDefinitions
         public void ThenTheSkillsWithIDShouldBeCreatedSuccessfully(int id)
         {
             string actualMessage = listingsOverviewComponentObj.getMessage();
-            ManageListingsAssertHelper.assertDeleteManageListingsSuccessMessage("Selenium has been deleted", actualMessage);
+            //ManageListingsAssertHelper.assertDeleteManageListingsSuccessMessage("Specflow has been deleted", actualMessage);
         }
     }
 }

@@ -1,11 +1,6 @@
 ﻿using AdvancedTaskSpecFlow.JSON_Data;
 using AdvancedTaskSpecFlow.Utilities;
 using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AdvancedTaskSpecFlow.Pages.CertificationComponent
 {
@@ -38,7 +33,6 @@ namespace AdvancedTaskSpecFlow.Pages.CertificationComponent
                 Console.WriteLine(ex);
             }
         }
-
         public void Click_AddCertification()
         {
             renderAddComponents();

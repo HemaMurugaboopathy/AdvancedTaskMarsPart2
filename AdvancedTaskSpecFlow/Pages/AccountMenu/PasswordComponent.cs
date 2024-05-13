@@ -1,11 +1,6 @@
 ﻿using AdvancedTaskSpecFlow.JSON_Data;
 using AdvancedTaskSpecFlow.Utilities;
 using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AdvancedTaskSpecFlow.Pages.AccountMenu
 {
@@ -49,8 +44,8 @@ namespace AdvancedTaskSpecFlow.Pages.AccountMenu
         {
             try
             {
-                Wait.WaitToBeClickable(driver, "XPath", "//a[text()='Save']", 8);
-                SaveButton = driver.FindElement(By.XPath("//a[text()='Save']"));
+                Wait.WaitToBeClickable(driver, "XPath", "//button[@type='button']", 8);
+                SaveButton = driver.FindElement(By.XPath("//button[@type='button']"));
             }
             catch (Exception ex)
             {
@@ -69,9 +64,7 @@ namespace AdvancedTaskSpecFlow.Pages.AccountMenu
             Thread.Sleep(5000);
             renderSaveComponents();
             SaveButton.Click();
-
         }
-
         public void renderAddMessage()
         {
             try
@@ -83,7 +76,6 @@ namespace AdvancedTaskSpecFlow.Pages.AccountMenu
             {
                 Console.WriteLine(ex);
             }
-
         }
         public string getMessage()
         {
@@ -92,7 +84,5 @@ namespace AdvancedTaskSpecFlow.Pages.AccountMenu
             Thread.Sleep(6000);
             return message;
         }
-
-
     }
 }

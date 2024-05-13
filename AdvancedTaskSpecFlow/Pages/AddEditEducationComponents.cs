@@ -2,11 +2,6 @@
 using AdvancedTaskSpecFlow.Utilities;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AdvancedTaskSpecFlow.Pages
 {
@@ -108,7 +103,6 @@ namespace AdvancedTaskSpecFlow.Pages
             {
                 Console.WriteLine(ex);
             }
-
         }
         public string getMessage()
         {
@@ -118,7 +112,5 @@ namespace AdvancedTaskSpecFlow.Pages
             Thread.Sleep(6000);
             return message;
         }
-
-
     }
 }

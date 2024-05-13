@@ -21,7 +21,7 @@ namespace AdvancedTaskSpecFlow.Pages.ManageMenu.ManageListings
         {
             try
             {
-                Wait.WaitToBeClickable(driver, "XPath", $"//td[text()='{existingTitle}']/following-sibling::td/div/button[@class='ui button']/i[@class='outline write icon']", 20);
+                Wait.WaitToBeClickable(driver, "XPath", $"//td[text()='{existingTitle}']/following-sibling::td/div/button[@class='ui button']/i[@class='outline write icon']", 30);
                 EditButton = driver.FindElement(By.XPath($"//td[text()='{existingTitle}']/following-sibling::td/div/button[@class='ui button']/i[@class='outline write icon']"));
             }
             catch (Exception ex)

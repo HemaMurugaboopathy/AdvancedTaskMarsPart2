@@ -1,16 +1,14 @@
+using AdvancedTaskSpecFlow.AssertHelpers;
 using AdvancedTaskSpecFlow.JSON_Data;
-using OpenQA.Selenium.Chrome;
 using AdvancedTaskSpecFlow.Pages;
 using AdvancedTaskSpecFlow.Utilities;
-using System;
 using TechTalk.SpecFlow;
-using AdvancedTaskSpecFlow.AssertHelpers;
 
 
 namespace AdvancedTaskSpecFlow.StepDefinitions
 {
     [Binding]
-    public class EducationFeatureStepDefinitions: CommonDriver
+    public class EducationFeatureStepDefinitions : CommonDriver
     {
         ProfileLoginPageComponent profileLoginPageComponentObj;
         ProfileMenuTabComponents profileMenuTabComponentsObj;
@@ -24,7 +22,7 @@ namespace AdvancedTaskSpecFlow.StepDefinitions
             profileMenuTabComponentsObj = new ProfileMenuTabComponents();
             addEditEducationComponentsObj = new AddEditEducationComponents();
         }
-       
+
         [Given(@"I logged in Mars portal successfully")]
         public void GivenILoggedInMarsPortalSuccessfully()
         {
@@ -72,6 +70,7 @@ namespace AdvancedTaskSpecFlow.StepDefinitions
             string expected = "Please enter all the fields";
             EducationAssertHelper.assertAddEducationSuccessMessage(expected, acutalSuccessMessage);
         }
+
         [When(@"I delete an existing education with ID (.*)")]
         public void WhenIDeleteAnExistingEducationWithID(int id)
         {
@@ -81,13 +80,11 @@ namespace AdvancedTaskSpecFlow.StepDefinitions
         }
 
         [Then(@"the education with ID (.*) should be deleted successfully")]
-        public void ThenTheEducationWithIDShouldBeDeletedSuccessfully(int p0)
+        public void ThenTheEducationWithIDShouldBeDeletedSuccessfully(int id)
         {
             String acutalSuccessMessage = addEditEducationComponentsObj.getMessage();
             string expected = "Education entry successfully removed";
             EducationAssertHelper.assertAddEducationSuccessMessage(expected, acutalSuccessMessage);
         }
-
-
     }
 }

@@ -2,11 +2,6 @@
 using AdvancedTaskSpecFlow.Utilities;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AdvancedTaskSpecFlow.Pages.CertificationComponent
 {
@@ -70,9 +65,9 @@ namespace AdvancedTaskSpecFlow.Pages.CertificationComponent
         public void Add_Certification(CertificationData certificationData)
         {
             renderAddComponents();
-            Thread.Sleep(6000);   
+            Thread.Sleep(6000);
             //Enter Certificate or Award
-             certificateTextbox.SendKeys(certificationData.Certificate);
+            certificateTextbox.SendKeys(certificationData.Certificate);
 
             //Enter Certified from
             certifiedFromTextbox.SendKeys(certificationData.CertifiedFrom);
@@ -96,7 +91,6 @@ namespace AdvancedTaskSpecFlow.Pages.CertificationComponent
             {
                 Console.WriteLine(ex);
             }
-
         }
         public string getMessage()
         {
@@ -106,12 +100,6 @@ namespace AdvancedTaskSpecFlow.Pages.CertificationComponent
             Thread.Sleep(6000);
             return message;
         }
-
-
-
     }
-
-
-
 }
 

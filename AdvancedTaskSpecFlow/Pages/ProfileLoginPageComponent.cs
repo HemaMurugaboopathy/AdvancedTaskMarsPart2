@@ -1,12 +1,7 @@
 ﻿using AdvancedTaskSpecFlow.Utilities;
-using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AdvancedTaskSpecFlow.Pages
 {
@@ -24,9 +19,7 @@ namespace AdvancedTaskSpecFlow.Pages
                 WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
                 Wait.WaitToBeClickable(driver, "XPath", "//a[@class='item' and text()='Sign In']", 10);
                 signInbutton = driver.FindElement(By.XPath("//a[@class='item' and text()='Sign In']"));
-                //Wait.WaitToExist(driver, "XPath", "//input[@name='email']", 10);
                 emailTextbox = wait.Until(ExpectedConditions.ElementExists(By.XPath("//input[@name='email']")));
-
                 passwordTextbox = driver.FindElement(By.XPath("//input[@name='password']"));
                 loginButton = driver.FindElement(By.XPath("//button[@class='fluid ui teal button']"));
             }

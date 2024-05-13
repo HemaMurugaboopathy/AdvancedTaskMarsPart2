@@ -1,10 +1,5 @@
 ﻿using Newtonsoft.Json;
 using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AdvancedTaskSpecFlow.Utilities
 {
@@ -13,13 +8,12 @@ namespace AdvancedTaskSpecFlow.Utilities
         public static List<T> loadData<T>(String jsonFilename)
         {
             string currentDirectory = TestContext.CurrentContext.TestDirectory;
-            string filePath = Path.Combine(currentDirectory, "Data", jsonFilename);
+            string filePath = Path.Combine(currentDirectory, "JSON_Data", jsonFilename);
             using (StreamReader reader = new StreamReader(filePath))
             {
                 var jsonContent = reader.ReadToEnd();
                 return JsonConvert.DeserializeObject<List<T>>(jsonContent);
             }
         }
-
     }
 }
