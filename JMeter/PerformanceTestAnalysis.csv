@@ -1,0 +1,20 @@
+﻿Action,Average Response time(ms),Min Response Time(ms),90th Percentile response time(ms),Max Response Time(ms),Met Expected Response time,Performance evaluation,
+2,SignIn,1133,270,2474,6689,No,Bad
+3,AddLanguage,67.28,72,470,2404,Yes,Good
+4,UpdateLanguage,237.46,255.9,719,3136,No,Bad
+5,DeleteLanguage,64.97,69,337,2236,Yes,Good
+6,AddSkill,337.45,102.6,15205,2364,Yes,Good
+7,UpdateSkill,236.36,245,508,3039,No,Bad
+8,DeleteSkill,65.27,68,263,783,Yes,Good
+9,AddEducation,69.64,75,471,2793,Yes,Good
+10,UpdateEducation,202.22,250,682,3650,No,Bad
+11,DeleteEducation,63.24,68,246,2313,Yes,Good
+12,AddCertification,70.05,72,666,2342,Yes,Good
+13,DeleteCertification,121.67,71,444,2218,Yes,Good
+14,AddDescription,181.76,190,623,2872,No,Bad
+15,AddShareSkill,1118.77,3270,5190,3014,No,Bad
+16,ViewShareSkill,7.52,7,148,2317,Yes,Good
+17,Disable/Enable,801.45,2275,8860,2916,No,Bad
+18,DeleteShareSkill,708.22,2506,10612,3426,No,Bad
+19,SearchSkillByCategory,7105.25,11360,21172,13122,No,Bad
+20,SignOut,35.11,31,1406,360,Yes,Good
